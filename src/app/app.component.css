@@ -1,0 +1,43 @@
+.app {
+    min-height: 100vh;
+}
+
+.app.dark {
+    background-color: var(--d-bg);
+    color: var(--d-text);
+
+}
+
+.app.light {
+    background-color: var(--l-bg);
+    color: var(--l-text);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+@media(min-width: 1400px) {
+    nav {
+        padding: 1.75rem 5rem
+    }
+}
+
+h2 {
+    font-size: 20px;
+}
+
+div {
+    font-weight: 400;
+}
+
+:host-context(.dark) nav {
+    background-color: var(--d-element)
+}
+
+:host-context(.light) nav {
+    background-color: var(--l-element)
+}

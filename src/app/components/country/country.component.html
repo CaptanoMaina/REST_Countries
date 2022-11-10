@@ -1,0 +1,30 @@
+<div class=" body" *ngFor="let country of countries$ | async">
+
+    <div class=" card1 shadow" *ngIf="country" [routerLink]="'/' + country.name.official">
+        <div class=" flag-image">
+
+            <img [src]="country.flags.png">
+        </div>
+        <div class="country-header">
+            {{country.name.official }}
+        </div>
+        <div class="country-details">
+            Population : {{country.population | number: '1.0'}}
+
+        </div>
+        <div class="country-details">
+
+            Region : {{country.region}}
+
+        </div>
+        <div class="country-details">
+
+            Capital : {{country.capital}}
+        </div>
+
+    </div>
+
+
+
+
+</div>

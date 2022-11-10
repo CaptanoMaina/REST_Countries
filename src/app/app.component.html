@@ -1,0 +1,15 @@
+<div [ngClass]="theme | async" class='app'>
+  <nav class="shadow">
+    <h2>Where in the World?</h2>
+    <div (click)="toggleTheme()">
+      <fa-icon [icon]="faMoon"></fa-icon>
+      {{" "}}
+      <span>Dark Mode</span>
+    </div>
+  </nav>
+
+  <app-country></app-country>
+
+  <router-outlet></router-outlet>
+
+</div>
