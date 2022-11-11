@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { ThemeService, Theme } from './services/theme.service'
-import { ApiService } from './services/api.service';
+
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
-import { Country } from './model/country.model';
+
 
 @Component({
   selector: 'app-root',
