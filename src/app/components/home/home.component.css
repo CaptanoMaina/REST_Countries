@@ -32,3 +32,31 @@ button {
     height: 4em;
     background: inherit;
 }
+
+.filter-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.country-cards {
+    padding: 0 1rem;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+
+@media (max-width: 500px) {
+    .country-cards {
+        display: flex;
+        flex-direction: column
+    }
+
+    .filter-components {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

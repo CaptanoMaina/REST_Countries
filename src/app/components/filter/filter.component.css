@@ -1,0 +1,39 @@
+.filter {
+    position: relative;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+
+    @media (min-width: 500px) {
+        margin-top: 0;
+        padding-right: 0;
+    }
+}
+
+filter-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+filter-options {
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    list-style: none;
+    padding-left: 1rem;
+    box-shadow: none;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+
+}

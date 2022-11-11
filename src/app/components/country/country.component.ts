@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { Country } from 'src/app/model/country.model';
 import { ApiService } from 'src/app/services/api.service';
@@ -8,10 +8,7 @@ import { ApiService } from 'src/app/services/api.service';
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.css']
 })
-export class CountryComponent implements OnInit {
-  countries$!: Observable<Country[]>;
-  constructor(private api: ApiService) { }
-  ngOnInit(): void {
-    this.countries$ = this.api.getCountries();
-  }
+export class CountryComponent {
+  @Input()
+  country!: Country;
 }

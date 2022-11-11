@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailComponent } from './components/detail/detail.component';
 import { CountryComponent } from './components/country/country.component';
 import { HomeComponent } from './components/home/home.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,15 @@ import { HomeComponent } from './components/home/home.component';
     DetailComponent,
     CountryComponent,
     HomeComponent,
+    FilterComponent,
 
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

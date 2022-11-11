@@ -1,0 +1,9 @@
+<div class="filter shadow">
+    <div class="filter-label" (click)="toggleOptions()">
+        <span>{{placeholder}} </span>
+        <fa-icon>faChevronDown</fa-icon>
+    </div>
+    <ul *ngIf="showOptions" class="filter-options shadow">
+        <li *ngFor="let value of values" (click)="select(value)"> {{value}} </li>
+    </ul>
+</div>
