@@ -4,7 +4,7 @@
             <fa-icon [icon]="faSearch"></fa-icon>
         </button>
         <input type="search" id="query" name="q" placeholder="Search for a country..."
-            aria-label="Search through site content">
+            aria-label="Search through site content" [(ngModel)]="searchFilter">
 
     </form>
     <app-filter placeholder="Filter by Region" [values]="regionOptions" [(value)]="regionFilter"></app-filter>
